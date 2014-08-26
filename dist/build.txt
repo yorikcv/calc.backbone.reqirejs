@@ -1,0 +1,12 @@
+
+js/main.js
+----------------
+js/libs/jquery/dist/jquery.js
+js/libs/underscore-amd/underscore.js
+js/libs/backbone-amd/backbone.js
+js/models/calculation.js
+js/collections/callculations.js
+js/views/calculation.js
+js/views/history.js
+js/views/control.js
+js/main.js
