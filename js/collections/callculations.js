@@ -5,7 +5,7 @@ define(['underscore', 'backbone', 'calculationModel', 'backboneLocalStorage'],
 		model: CalculationModel
 	});
 
-	  localStorage: new BackboneLocalStorage("calc-backbone");
+	  localStorage: new Backbone.LocalStorage("calc-backbone");
 
 	return Сalculations;
 });

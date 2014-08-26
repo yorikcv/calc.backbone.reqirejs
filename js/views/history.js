@@ -13,6 +13,8 @@ define([
 		initialize: function () {
 			this.render();
 			this.collection.on('add', this.add, this);
+			// calculationCollection.url = '/fgd';
+						// calculationCollection.fetch();
 		},
 
 		render: function () {

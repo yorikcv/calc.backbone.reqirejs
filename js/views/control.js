@@ -9,6 +9,7 @@ define(['jquery', 'underscore', 'backbone', 'calculationModel'], function ($, _,
         	this.$('.operations').on('click', this.operationsClick);
         	this.$('.equal').on('click', this.equalClick);
         	this.$('.clear').on('click', this.clearClick);
+
         },
 
         render: function() {
@@ -49,6 +50,7 @@ define(['jquery', 'underscore', 'backbone', 'calculationModel'], function ($, _,
 				firstNumber: cacheCalculation.getFirstNumber(), secondNumber: cacheCalculation.getSecondNumber(), operand: cacheCalculation.getOperand()
 			});
 			calculationCollection.add(calculationAdd);
+			calculationAdd.save();
 			cacheCalculation.setFirstNumber('');
 			cacheCalculation.setSecondNumber('');
 			

@@ -26,6 +26,7 @@ require([
 	
 	cacheCalculation = new CalculationModel({firstNumber: '', secondNumber: '', operand: '', numbers: ''});
 	calculationCollection = new CalculationsCollection();
+	calculationCollection.fetch();
 
 	historyView = new HistoryView({collection: calculationCollection});
 	controlView = new ControlView({});
